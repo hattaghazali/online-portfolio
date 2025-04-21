@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+
+@layer base {
+    :root {
+        --pearlbush: hsl(42, 23%, 89%);
+        --pearlbush-dark: hsl(42, 23%, 87%);
+
+        --sisal: hsl(44, 28%, 82%);
+        --sisal-dark: hsl(44, 28%, 77%);
+
+        --taupe-50: hsl(60, 17%, 95%);
+        --taupe-100: hsl(55, 18%, 88%);
+        --taupe-200: hsl(52, 19%, 77%);
+        --taupe-300: hsl(51, 18%, 64%);
+        --taupe-400: hsl(49, 18%, 53%);
+        --taupe-500: hsl(45, 18%, 47%);
+        --taupe-600: hsl(41, 18%, 40%);
+        --taupe-700: hsl(36, 18%, 33%);
+        --taupe-800: hsl(31, 16%, 28%);
+        --taupe-900: hsl(28, 15%, 26%);
+        --taupe-950: hsl(26, 16%, 18%);
+        /* --taupe-950: hsl(26, 16%, 13%); */
+
+        /* --accent: hsl(46, 72%, 62%); */
+        --accent: hsl(46, 72%, 62%);
+        --accent-dark: hsl(46, 72%, 50%);
+        --accent-light: hsl(46, 72%, 66%);
+
+        --color-primary: var(--pearlbush);
+        --color-primary-dark: var(--pearlbush-dark);
+
+        --color-secondary: var(--sisal);
+        --color-secondary-dark: var(--sisal-dark);
+
+        --color-tertiary: var(--taupe-950);
+
+        --cursor-url: url('/imgs/iconamoon_cursor-duotone_24_v3.svg');
+        --cursor-def: var(--cursor-url), auto;
+        --cursor-point: var(--cursor-url), pointer;
+    }
+    html {
+        @apply overflow-y-scroll;
+    }
+    body {
+        @apply bg-primary font-dmsans text-light cursor-def antialiased;
+        /* @apply bg-primary font-dmsans text-tertiary cursor-def bg-[url('/imgs/img_noise_v2.webp')] bg-repeat opacity-[100%] bg-blend-soft-light; */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-gsans text-tertiary font-medium;
+
+        text-box-trim: trim-both;
+        text-box-edge: cap alphabetic;
+    }
+
+    h1 {
+        @apply text-[clamp(2.027rem,0.41rem+8.09vw,7.992rem)] leading-[clamp(2.275rem,0.451rem+9.12vw,9rem)] -tracking-[clamp(0.125rem,0.023rem+0.51vw,0.5rem)];
+    }
+
+    h2 {
+        @apply text-[clamp(1.802rem,0.758rem+5.22vw,5.652rem)] leading-[clamp(2.175rem,0.894rem+6.41vw,6.9rem)] -tracking-[clamp(0.125rem,0.074rem+0.25vw,0.313rem)];
+    }
+
+    h3 {
+        @apply text-[clamp(1.602rem,0.952rem+3.25vw,3.998rem)] leading-[clamp(1.85rem,1.097rem+3.76vw,4.625rem)] -tracking-[clamp(0.094rem,0.051rem+0.21vw,0.25rem)];
+    }
+
+    h4 {
+        @apply text-[clamp(1.424rem,1.043rem+1.9vw,2.827rem)] leading-[clamp(1.675rem,1.244rem+2.15vw,3.263rem)] -tracking-[clamp(0.094rem,0.068rem+0.13vw,0.188rem)];
+    }
+
+    h5 {
+        @apply text-[clamp(1.266rem,1.067rem+0.99vw,1.999rem)] leading-[clamp(1.519rem,1.287rem+1.16vw,2.375rem)] -tracking-[clamp(0.063rem,0.046rem+0.08vw,0.125rem)];
+    }
+
+    a {
+        @apply cursor-def;
+    }
+
+    ::-webkit-scrollbar {
+        @apply cursor-def w-4;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply cursor-def bg-taupe-800;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply cursor-def bg-secondary border-taupe-800 hover:bg-primary rounded-xl border-3 duration-300 ease-in-out;
+    }
+
+    button {
+        @apply cursor-def;
+    }
+}
+
+@theme {
+    --font-dmsans: var(--font-dmsans);
+    --font-gsans: var(--font-gsans);
+
+    --font-dmsans--font-feature-settings: 'ss01' 0, 'ss03' 1, 'kern' 1;
+    --font-gsans--font-feature-settings: 'ss01' 0, 'ss03' 1, 'kern' 1;
+
+    --color-taupe-50: var(--taupe-50);
+    --color-taupe-100: var(--taupe-100);
+    --color-taupe-200: var(--taupe-200);
+    --color-taupe-300: var(--taupe-300);
+    --color-taupe-400: var(--taupe-400);
+    --color-taupe-500: var(--taupe-500);
+    --color-taupe-600: var(--taupe-600);
+    --color-taupe-700: var(--taupe-700);
+    --color-taupe-800: var(--taupe-800);
+    --color-taupe-900: var(--taupe-900);
+    --color-taupe-950: var(--taupe-950);
+
+    --color-primary: var(--color-primary);
+    --color-primary-dark: var(--color-primary-dark);
+
+    --color-secondary: var(--color-secondary);
+    --color-secondary-dark: var(--color-secondary-dark);
+
+    --color-tertiary: var(--color-tertiary);
+
+    /* --color-light: #514d49; */
+    /* --color-light: #605c57; */
+    --color-light: #585550;
+    --color-accent: var(--accent);
+    --color-accent-light: var(--accent-light);
+    --color-accent-dark: var(--accent-dark);
+    /* --color-accent: #e1c053; */
+
+    --cursor-def: var(--cursor-def);
+    --cursor-point: var(--cursor-point);
+}
+
+@layer components {
+    .swiper-prevEl,
+    .swiper-nextEl {
+        @apply bg-accent inline-flex h-[48px] w-[48px] items-center justify-center rounded-full border border-black/10;
+    }
+
+    .swiper-button-disabled {
+        @apply bg-transparent;
+    }
+}
+
+@layer utilities {
+    .trim {
+        text-box-trim: trim-both;
+        text-box-edge: cap alphabetic;
+    }
+    .animate_1 {
+        @apply duration-150 ease-linear;
+    }
+    .center-xy {
+        @apply inline-flex items-center justify-center;
+    }
+    .walao::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hidden {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
