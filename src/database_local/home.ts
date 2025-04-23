@@ -8,7 +8,7 @@ const social_links: ISocialLinks[] = [
     {
         id: 1,
         title: 'LinkedIn',
-        links: 'https://www.linkedin.com/in/hatta-ghazali-b910bb310'
+        links: 'https://www.linkedin.com/in/hattaghazali'
     },
     {
         id: 2,
