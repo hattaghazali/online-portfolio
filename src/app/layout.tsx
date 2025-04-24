@@ -1,4 +1,6 @@
+import { Analytics } from '@vercel/analytics/next';
 import { Metadata } from 'next';
+
 import { dmsans, gsans } from '@/lib/fonts';
 import { NavTop, Footer, ScrollTop, NavBottom } from '@/components';
 import '@/styles/globals.css';
@@ -36,6 +38,7 @@ const LayoutGlobal = ({ children }: ILayoutGlobal) => {
                 {children}
                 <NavBottom />
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
