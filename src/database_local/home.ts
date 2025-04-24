@@ -20,11 +20,11 @@ const social_links: ISocialLinks[] = [
         title: 'Figma',
         links: 'https://www.figma.com/@hattaghazali'
     },
-    {
-        id: 4,
-        title: 'Instagram',
-        links: 'https://www.instagram.com/hattacr7/'
-    },
+    // {
+    //     id: 4,
+    //     title: 'Instagram',
+    //     links: 'https://www.instagram.com/hattacr7/'
+    // },
     {
         id: 5,
         title: 'zulhatta73@gmail.com',
