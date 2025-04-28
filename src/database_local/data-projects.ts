@@ -126,6 +126,11 @@ const data_projects: IDataProject[] = [
                 role: ContributorRole.BackendDeveloper
             },
             {
+                id: ContributorId.Pasha,
+                name: ContributorName.Pasha,
+                role: ContributorRole.ProjectManager
+            },
+            {
                 id: ContributorId.Iskandar,
                 name: ContributorName.Iskandar,
                 role: ContributorRole.FrontendDeveloper
