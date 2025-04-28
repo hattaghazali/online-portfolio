@@ -1,10 +1,10 @@
-import { Analytics } from '@vercel/analytics/next';
 import { Metadata } from 'next';
 
 import { dmsans, gsans } from '@/lib/fonts';
 import { NavTop, Footer, ScrollTop, NavBottom } from '@/components';
 import '@/styles/globals.css';
 import cn from '@/lib/utils';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
     title: {
