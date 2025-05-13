@@ -6,6 +6,8 @@ interface IContainer {
 }
 
 const Container = ({ className, children }: IContainer) => {
-    return <div className={cn('mx-6 max-w-[1400px] xl:mx-auto', className)}>{children}</div>;
+    return (
+        <div className={cn('mx-6 max-w-[1400px] xl:mx-auto xl:px-6', className)}>{children}</div>
+    );
 };
 export default Container;
