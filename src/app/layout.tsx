@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         default: 'Hatta Ghazali',
         template: '%s | Hatta Ghazali'
     },
-    description: 'test description',
+    description: `Hatta Personal Portfolio`,
     icons: {
         icon: '/favicons/favicon.ico', // Standard favicon
         shortcut: '/favicons/favicon.ico', // Optional: Shortcut icon
