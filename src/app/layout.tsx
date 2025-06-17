@@ -33,6 +33,12 @@ interface ILayoutGlobal {
 const LayoutGlobal = ({ children }: ILayoutGlobal) => {
     return (
         <html className='scroll-smooth'>
+            <head>
+                <meta
+                    name='google-site-verification'
+                    content='CtCiHzCuR_qm0eeBv3HVEeqkCdjbA0qYBgb_ueJ0_l8'
+                />
+            </head>
             <body className={cn(`${dmsans.variable} ${gsans.variable}`)}>
                 <ScrollTop />
                 <NavTop />
