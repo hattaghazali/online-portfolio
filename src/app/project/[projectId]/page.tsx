@@ -8,6 +8,12 @@ interface IProjectDetails {
     params: Promise<{ projectId: string }>;
 }
 
+// Generate static parameters for all project detail pages
+export async function generateStaticParams() {
+    return data_projects.map((project) => ({
+        projectId: project.p_id.toString()
+    }));
+}
 export const generateMetadata = async (
     { params }: IProjectDetails,
     parent: ResolvingMetadata
@@ -22,7 +28,8 @@ export const generateMetadata = async (
 
     return {
         title: project.p_title || 'Default Project Title',
-        description: `Project details of ${project.p_title}`
+        description: `Project details of ${project.p_title}`,
+        keywords: [`Project details of ${project.p_title}`]
         // openGraph: {
         //     title: project.p_title || 'Default Project Title',
         //     description: `Details for project: ${project.p_title}`,
