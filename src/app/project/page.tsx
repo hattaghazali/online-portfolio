@@ -4,7 +4,8 @@ import { Breadcrumb } from '@/components';
 import { SProjectsList } from '@/containers';
 
 export const metadata: Metadata = {
-    title: 'Projects'
+    title: 'Projects',
+    description: 'Explore a collection of my projects in software testing and web development.'
 };
 
 const Projects: NextPage = () => {
