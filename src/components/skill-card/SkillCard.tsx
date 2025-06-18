@@ -8,8 +8,9 @@ const SkillCard = ({ id, label, link, desc }: ISkill) => {
         <div
             key={id}
             className={cn(
-                'px-6 py-20',
-                'group bg-secondary-dark flex aspect-[1/1] flex-col items-center gap-y-7 rounded-[32px] text-center',
+                'px-5',
+                'flex flex-col items-center justify-center',
+                'group bg-secondary-dark aspect-[1/1] gap-y-5 rounded-[32px] text-center',
                 'border-tertiary/0 hover:border-tertiary/10 border'
             )}
         >
