@@ -27,8 +27,8 @@ const SHero = () => {
                                 'text-base sm:text-lg'
                             )}
                         >
-                            A software tester currently diving into design and development,
-                            transforming ideas into digital products
+                            A software tester currently diving into web development, transforming
+                            ideas into digital products
                         </p>
 
                         <Link href={'/#skill'}>
